@@ -238,7 +238,7 @@ var saveTasks = function() {
 };
 
 var loadTasks = function() {
-    savedTasks = localStorage.getItem("tasks");
+    var savedTasks = localStorage.getItem("tasks");
 
     if (!savedTasks) {
         tasks = [];
